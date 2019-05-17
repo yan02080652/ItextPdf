@@ -329,17 +329,33 @@ public class MyDemo {
             e.printStackTrace();
         }
 
+        //关闭文档，编辑结束
         document.close();
 
+        //加水印
         markLocalImage42Dist(originalFile,tempFile,list1);
 
     }
 
+    /**
+     * @param writer    PdfWriter对象
+     * @param bf        基础字体
+     * @param presentFontSize   字体大小
+     * @param pageSize  纸张大小
+     */
     public static void setFooter(PdfWriter writer, BaseFont bf, int presentFontSize, Rectangle pageSize){
         ItextPdfHeaderFooter headerFooter = new ItextPdfHeaderFooter(bf,presentFontSize,pageSize);
         writer.setPageEvent(headerFooter);
     }
 
+    /**
+     * @param srcPdf    pdf源文件
+     * @param distPdf   最终输出路径
+     * @param layerPathArr  图层列表
+     * @return
+     * @throws IOException
+     * @throws DocumentException
+     */
     public static String markLocalImage42Dist(String srcPdf, String distPdf, List<String> layerPathArr)
             throws IOException, DocumentException {
         File srcPdfFile = new File(srcPdf);
@@ -372,7 +388,6 @@ public class MyDemo {
             Image img15 = Image.getInstance(layerPathArr.get(0));
             Image img16 = Image.getInstance(layerPathArr.get(0));
             Image img17 = Image.getInstance(layerPathArr.get(0));
-
             img.setRotation((float) (Math.PI / 6));
             img1.setRotation((float) (Math.PI / 6));
             img2.setRotation((float) (Math.PI / 6));
@@ -391,9 +406,6 @@ public class MyDemo {
             img15.setRotation((float) (Math.PI / 6));
             img16.setRotation((float) (Math.PI / 6));
             img17.setRotation((float) (Math.PI / 6));
-
-
-
             img.setAbsolutePosition(0, 0);
             img1.setAbsolutePosition(0, 150);
             img2.setAbsolutePosition(0, 300);
@@ -413,6 +425,7 @@ public class MyDemo {
             img16.setAbsolutePosition(400, 600);
             img17.setAbsolutePosition(400, 750);
 
+            //给每一页PDF都 打上水印
             for (int i=1;i<=n;i++){
                 over = stamp.getOverContent(i);
                 PdfGState gState = new PdfGState();
@@ -442,8 +455,4 @@ public class MyDemo {
         reader.close();
         return distPdf;
     }
-
-
-
-
 }

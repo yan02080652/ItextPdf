@@ -11,7 +11,6 @@ import java.io.*;
 public class PngDemo {
 
     /*
-     * *
      * 实现pdf文件转换为png
      * 参数是第一个是要转的转换的是pdffile
      * 第二个参数是是要存储的png图片的路径
@@ -24,6 +23,7 @@ public class PngDemo {
                 PDDocument doc = PDDocument.load(instream);
                 PDFRenderer renderer = new PDFRenderer(doc);
                 int pageCount = doc.getNumberOfPages();
+                //这里只能实现第一页的转换，如果有多页PDF则不能实现
                 if (pageCount > 0) {
                     BufferedImage image = renderer.renderImage(0, 2.0f);
                     image.flush();

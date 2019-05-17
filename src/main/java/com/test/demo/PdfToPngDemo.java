@@ -12,8 +12,13 @@ import java.io.IOException;
 
 public class PdfToPngDemo {
 
+    /**
+     * pdf转换PNG
+     * @param pdfFilePath       PDF路径
+     * @param dstImgFolder      最终图片输出路径
+     * @throws IOException
+     */
     public static void pdf2Image(String pdfFilePath,String dstImgFolder) throws IOException {
-
 
         File file = new File(pdfFilePath);
 

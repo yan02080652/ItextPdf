@@ -75,7 +75,6 @@ public class Test {
 
         MyDemo.export(list,"Tem测试","萧红");
 
-
         String game = getRandom(16);
         System.out.println(game);
 
