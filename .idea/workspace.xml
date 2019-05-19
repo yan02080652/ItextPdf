@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e74d1730-3f36-4d2f-b51d-4d9a20f1d79d" name="Default Changelist" comment="" />
+    <list default="true" id="e74d1730-3f36-4d2f-b51d-4d9a20f1d79d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/demo/MyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/demo/MyDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/demo/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/demo/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/MyDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/MyDemo1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/MyDemoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/PdfToPngDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/demo/PdfToPngDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/PngDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/demo/PngDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/demo/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/WaterMarkImage.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,41 +25,43 @@
     <session id="-1504837615">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="7" />
           <entry key="gif" value="2" />
-          <entry key="java" value="23" />
+          <entry key="java" value="33" />
           <entry key="jpg" value="2" />
-          <entry key="png" value="17" />
+          <entry key="png" value="19" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="7" />
-          <entry key="Image" value="21" />
-          <entry key="JAVA" value="23" />
+          <entry key="Image" value="23" />
+          <entry key="JAVA" value="33" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="14022" />
+          <entry key="java" value="15527" />
+          <entry key="txt" value="20" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="14022" />
+          <entry key="JAVA" value="15527" />
+          <entry key="PLAIN_TEXT" value="20" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
@@ -59,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="798">
+              <caret line="42" column="29" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,43 +84,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/MyDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4508">
-              <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+            <state relative-caret-position="334">
+              <caret line="357" column="38" lean-forward="true" selection-start-line="301" selection-start-column="2" selection-end-line="357" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/MyDemoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5776">
-              <caret line="315" column="28" selection-start-line="315" selection-start-column="28" selection-end-line="315" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/PngDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/PdfToPngDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1099#1107#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,6 +117,9 @@
       <find>targetPath</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -148,9 +132,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/test/demo/TravelPlanOrderCommon.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/demo/Demo2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/demo/MyDemoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/demo/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/demo/PngDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/demo/PdfToPngDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/demo/PngDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/demo/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/demo/MyDemo.java" />
       </list>
     </option>
@@ -175,16 +159,19 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="830" />
     <option name="width" value="1100" />
     <option name="height" value="625" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -244,27 +231,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="itextDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="itextDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="typeface" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558075340202" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558263288301" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
@@ -389,16 +366,27 @@
       <workItem from="1558011591747" duration="1115000" />
       <workItem from="1558022998715" duration="4106000" />
       <workItem from="1558065056764" duration="1317000" />
+      <workItem from="1558080343091" duration="2518000" />
+      <workItem from="1558247046607" duration="14493000" />
     </task>
+    <task id="LOCAL-00001" summary="itext java pdf png">
+      <created>1558080854542</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558080854542</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67088000" />
+    <option name="totallyTimeSpent" value="84099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" x="526" y="47" width="434" height="729" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.18766756" />
+      <window_info content_ui="combo" x="526" y="47" width="434" height="729" id="Project" order="0" sideWeight="0.49909583" weight="0.26876676" />
       <window_info id="Structure" order="1" sideWeight="0.50090414" side_tool="true" weight="0.22453083" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -408,7 +396,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30551627" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14872521" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -418,7 +406,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32921812" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32956153" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -431,7 +419,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" x="526" y="47" width="434" height="729" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.17828418" />
+      <window_info active="true" content_ui="combo" x="526" y="47" width="434" height="729" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.26876676" />
       <window_info id="Structure" order="1" sideWeight="0.50090414" side_tool="true" weight="0.22453083" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -440,8 +428,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27015558" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3045326" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -451,11 +439,11 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32921812" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32956153" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24952199" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
@@ -470,19 +458,29 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="itext java pdf png" />
+    <option name="LAST_COMMIT_MESSAGE" value="itext java pdf png" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/test/demo/MyDemo.java</url>
+          <line>225</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/waterMark2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="jar://E:/apache-maven-3.3.9-jar/repository/com/itextpdf/itextpdf/5.5.12/itextpdf-5.5.12.jar!/com/itextpdf/text/pdf/PdfPTable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="323" selection-start-line="323" selection-end-line="323" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/waterMark.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="jar://E:/apache-maven-3.3.9-jar/repository/com/itextpdf/itextpdf/5.5.12/itextpdf-5.5.12.jar!/com/itextpdf/text/BaseColor.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -505,50 +503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/WaterMarkImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="46" column="68" lean-forward="true" selection-start-line="46" selection-start-column="68" selection-end-line="46" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/8.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/MyDemo1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1892">
-          <caret line="68" column="41" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/Demo2.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/TravelPlanOrderCommon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -609,17 +567,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/MyDemoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/ItextPdfHeaderFooter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5776">
-          <caret line="315" column="28" selection-start-line="315" selection-start-column="28" selection-end-line="315" selection-end-column="28" />
+        <state relative-caret-position="399">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/MyDemo1.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/MyDemoTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/WaterMarkImage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/waterMark2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/waterMark.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/TravelPlanOrderCommon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="55" column="7" lean-forward="true" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/PngDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="361">
+          <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -628,28 +609,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/PdfToPngDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="86">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDK/JDK7/src.zip!/java/io/FileOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="220" selection-start-line="220" selection-end-line="220" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/ItextPdfHeaderFooter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        <state relative-caret-position="798">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -658,10 +633,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/MyDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4508">
-          <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        <state relative-caret-position="334">
+          <caret line="357" column="38" lean-forward="true" selection-start-line="301" selection-start-column="2" selection-end-line="357" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1099#1107#0" expanded="true" />
           </folding>
         </state>
       </provider>

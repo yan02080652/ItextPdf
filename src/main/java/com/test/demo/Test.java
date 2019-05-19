@@ -21,7 +21,7 @@ public class Test {
         TravelPlanOrderCommon common2 = new TravelPlanOrderCommon("111122220000","HOTEL","上海","北京","","G1",
                 "","北京升高酒店(草桥店)", date,null,null,date,"3000","111122220000","产品部",
                 new Long(23),"10","wan");
-        TravelPlanOrderCommon common3 = new TravelPlanOrderCommon("111122220000","TRAIN","上海","北京","","G1",
+        TravelPlanOrderCommon common3 = new TravelPlanOrderCommon("111122220000","TRAIN","上海","乌鲁木齐","","G1",
                 "","", date,null,null,date,"3000","111122220000","产品部",
                 new Long(23),"10","lioa");
         TravelPlanOrderCommon common4 = new TravelPlanOrderCommon("111122220000","HOTEL","上海","北京","","",
@@ -39,7 +39,7 @@ public class Test {
         TravelPlanOrderCommon common8 = new TravelPlanOrderCommon("111122220000","HOTEL","上海","北京","","",
                 "","北京香格里拉大酒店（酒仙桥店）", date,null,null,date,"3000","","产品部",
                null,null,null);
-        TravelPlanOrderCommon common9 = new TravelPlanOrderCommon("111122220000","HOTEL","上海","北京","","",
+        TravelPlanOrderCommon common9 = new TravelPlanOrderCommon("1111222200009999","HOTEL","上海","北京","","",
                 "","北京香格里拉大酒店（酒仙桥店）", date,null,null,date,"3000","","产品部",
                null,null,null);
         TravelPlanOrderCommon common10 = new TravelPlanOrderCommon("111122220000","HOTEL","上海","北京","","",

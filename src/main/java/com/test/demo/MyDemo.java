@@ -19,7 +19,7 @@ public class MyDemo {
     public static void export(List<TravelPlanOrderCommon> commons,String orgName,String userName) throws IOException, DocumentException {
 
         //上下左右边距 ， 和纸张大小
-        Document document = new Document(PageSize.A4);
+        Document document = new Document(PageSize.A4,0,0,10,10);
 
         int i = (int) (Math.random()*100);
         String originalFile = "D:\\pdf\\test"+i+".pdf";
@@ -30,64 +30,73 @@ public class MyDemo {
         List<String> list1 = new ArrayList<String>();
 
         list1.add(imgPath);
+        //设置字体
+        BaseFont baseFont = BaseFont.createFont("E:\\workspace\\itextDemo\\src\\main\\resources\\typeface\\simsun.ttf",BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
 
-        PdfWriter pdfWriter = null;
+        Font fontTitle = new Font(baseFont,16,Font.BOLD);
+        Font font12 = new Font(baseFont,12);
+        Font font10 = new Font(baseFont,10);
+        Font font10_b = new Font(baseFont,10,Font.BOLD);
+        Font font10_gray = new Font(baseFont,10,Font.NORMAL,new BaseColor(100,100,100));
+        Font font8 = new Font(baseFont,8);
+        Font font8_b = new Font(baseFont,8,Font.BOLD);
+        Font font8_gray = new Font(baseFont,8,Font.NORMAL,new BaseColor(100,100,100));
+        Font font6 = new Font(baseFont,6);
+        Font font6_gray = new Font(baseFont,6,Font.NORMAL,new BaseColor(90,90,90));
+
+
         //设置图片透明度
         //transparentImage(imgPath,imgPath2,3,"png");
         try {
             //将 文件写入到地址
-            pdfWriter =PdfWriter.getInstance(document, new FileOutputStream("D:\\pdf\\test" + i + ".pdf"));
-            //设置字体
-            BaseFont baseFont = BaseFont.createFont("E:\\workspace\\itextDemo\\src\\main\\resources\\typeface\\simsun.ttf",BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+            PdfWriter.getInstance(document, new FileOutputStream("D:\\pdf\\test" + i + ".pdf"));
             //打开文本
             document.open();
 
-            Font fontTitle = new Font(baseFont,16);
-            Font fontText = new Font(baseFont,12);
-            Font font10 = new Font(baseFont,10);
-            Font font6_1 = new Font(baseFont,8);
-            Font font6 = new Font(baseFont,8);
-            Font font6_6 = new Font(baseFont,6);
+            //设置页码
             //setFooter(pdfWriter,baseFont,10,PageSize.A4);
 
             PdfPTable table = new PdfPTable(3);
-
             table.setTotalWidth(100);
-
             table.setWidths(new int[]{30,40,30});
 
-            //第一列
+            //第一列   标题
             PdfPCell cell = new PdfPCell();
             Paragraph paragraph = new Paragraph();
             paragraph.setFont(fontTitle);
             Phrase phrase = new Phrase("员工行程导出");
             paragraph.add(phrase);
             cell.addElement(paragraph);
+            cell.setVerticalAlignment(PdfPCell.ALIGN_MIDDLE);
             cell.disableBorderSide(13);
             cell.setFixedHeight(30);
             table.addCell(cell);
 
-            //第二列
+            //第二列   所属公司
             PdfPCell cell2 = new PdfPCell();
             Paragraph paragraph2 = new Paragraph();
             paragraph2.setAlignment(Element.ALIGN_LEFT);
-            paragraph2.setFont(fontText);
+            paragraph2.setFont(font12);
             Phrase phrase2 = new Phrase(orgName);
             paragraph2.add(phrase2);
             cell2.addElement(paragraph2);
             cell2.setFixedHeight(30);
+            cell2.setVerticalAlignment(PdfPCell.ALIGN_MIDDLE);
             cell2.disableBorderSide(13);
             table.addCell(cell2);
 
 
-            //第三列
+            //第三列   导出时间
             PdfPCell cell3 = new PdfPCell();
             Date date = new Date();
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-            Paragraph paragraph3 = new Paragraph("" + simpleDateFormat.format(date));
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            Paragraph paragraph3 = new Paragraph("导出时间：" + simpleDateFormat.format(date));
+            paragraph3.setFont(font8);
             paragraph3.setAlignment(Element.ALIGN_RIGHT);
             cell3.addElement(paragraph3);
+            cell3.setVerticalAlignment(PdfPCell.ALIGN_BOTTOM);
             cell3.setFixedHeight(30);
+            cell3.setPaddingBottom(8);
             cell3.disableBorderSide(13);
             table.addCell(cell3);
 
@@ -100,10 +109,10 @@ public class MyDemo {
             table1.setTotalWidth(100);
             table1.setWidths(new int[]{10,90});
 
-            //第一列
+            //第一列   名称
             PdfPCell cell4 = new PdfPCell();
             Paragraph paragraph4 = new Paragraph();
-            paragraph4.setFont(fontText);
+            paragraph4.setFont(font10_b);
             Phrase phrase4 = new Phrase(userName);
             paragraph4.add(phrase4);
             cell4.disableBorderSide(15);
@@ -111,11 +120,11 @@ public class MyDemo {
 
             table1.addCell(cell4);
 
-            //第二列
+            //第二列   部门
             PdfPCell cell5 = new PdfPCell();
             Paragraph paragraph5 = new Paragraph();
             Font font5 = new Font(baseFont,10);
-            paragraph5.setFont(font5);
+            paragraph5.setFont(font10_gray);
             Phrase phrase5 = new Phrase(orgName + "部门");
             paragraph5.add(phrase5);
             cell5.disableBorderSide(15);
@@ -124,15 +133,15 @@ public class MyDemo {
             table1.addCell(cell5);
 
 
-            //第三 部分
+            //第三 部分     查询区间
             PdfPTable table2 = new PdfPTable(1);
             table2.setTotalWidth(100);
             PdfPCell cell6 = new PdfPCell();
             Paragraph paragraph1 = new Paragraph();
             Date date1 = new Date();
             SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("yyyy.mm.dd");
-            Phrase phrase1 = new Phrase("行程时间：" + simpleDateFormat1.format(date1) + "-" + simpleDateFormat1.format(date));
-            paragraph1.setFont(font5);
+            Phrase phrase1 = new Phrase("行程时间：" + simpleDateFormat1.format(date1) + " - " + simpleDateFormat1.format(date));
+            paragraph1.setFont(font10);
             paragraph1.add(phrase1);
             cell6.addElement(paragraph1);
             cell6.disableBorderSide(15);
@@ -143,25 +152,28 @@ public class MyDemo {
             document.add(table1);
             document.add(table2);
 
-            for (int k=0;k<commons.size();k++){
 
+            //变量部分
+            for (int k=0;k<commons.size();k++){
                 //正文部分
-                PdfPTable table5 = new PdfPTable(5);
+                PdfPTable table5 = new PdfPTable(6);
 
                 table5.setTotalWidth(100);
-                table5.setWidths(new int[]{20,10,10,25,35});
+                table5.setWidths(new int[]{15,5,7,8,41,24});
 
                 //第一列
                 PdfPCell cell10 = new PdfPCell();
                 cell10.setFixedHeight(25);
                 Paragraph paragraph10 = new Paragraph();
-                paragraph10.setFont(font10);
-                Phrase phrase10 = new Phrase(simpleDateFormat.format(commons.get(k).getTravelDate()));
+                paragraph10.setFont(font8_gray);
+                SimpleDateFormat simpleDateFormat2 = new SimpleDateFormat("yyyy年mm月dd日");
+                Phrase phrase10 = new Phrase(simpleDateFormat2.format(commons.get(k).getTravelDate()));
                 paragraph10.add(phrase10);
+                paragraph10.setAlignment(Element.ALIGN_RIGHT);
                 cell10.disableBorderSide(15);
                 cell10.setUseAscender(true);
                 cell10.setVerticalAlignment(PdfPCell.ALIGN_MIDDLE);
-                cell10.setHorizontalAlignment(Element.ALIGN_CENTER);
+                //cell10.setHorizontalAlignment(Element.ALIGN_CENTER);
                 cell10.addElement(paragraph10);
 
                 table5.addCell(cell10);
@@ -208,19 +220,22 @@ public class MyDemo {
                 cell12.disableBorderSide(15);
                 table5.addCell(cell12);
 
+
+                //机票， 酒店， 火车
                 PdfPCell cell13 = new PdfPCell();
                 cell13.setFixedHeight(25);
                 Paragraph paragraph13 = new Paragraph();
-                paragraph13.setFont(font10);
-                Phrase phrase13_1 = new Phrase(temp + "     ");
+                paragraph13.setFont(font8_gray);
+                Phrase phrase13_1 = new Phrase(temp + "  ");
 
 
-                Phrase phrase13_2 = null;
+                Chunk chunk13_2 = null;
                 if (commons.get(k).getOrderType().equals("HOTEL")){
-                    phrase13_2 = new Phrase(commons.get(k).getToCity() + "       ");
+                    chunk13_2 = new Chunk(commons.get(k).getToCity() + "  ");
                 }else{
-                    phrase13_2 = new Phrase(commons.get(k).getFromCity() + "-" + commons.get(k).getToCity() + "  ");
+                    chunk13_2 = new Chunk(commons.get(k).getFromCity() + "-" + commons.get(k).getToCity() + "  ");
                 }
+
                 String code = "";
                 if (commons.get(k).getOrderType().equals("TRAIN")){
                     code = commons.get(k).getTrainCode();
@@ -229,10 +244,8 @@ public class MyDemo {
                 }else if (commons.get(k).getOrderType().equals("AIRCRAFT")){
                     code = commons.get(k).getFlightNo();
                 }
-                Phrase phrase13_3 = new Phrase(code + "     ");
 
                 paragraph13.add(phrase13_1);
-                paragraph13.add(phrase13_2);
 
                 cell13.addElement(paragraph13);
                 cell13.setBackgroundColor(new BaseColor(215, 215, 215));
@@ -244,29 +257,52 @@ public class MyDemo {
                 table5.addCell(cell13);
 
 
-                PdfPCell cell14 = new PdfPCell();
-                cell14.setFixedHeight(25);
-                Paragraph paragraph14 = new Paragraph();
-                paragraph14.setFont(font6_1);
-                paragraph14.add(phrase13_3);
-                cell14.addElement(paragraph14);
-                cell14.setBackgroundColor(new BaseColor(215, 215, 215));
-                cell14.disableBorderSide(15);
-                cell14.setUseAscender(true);
-                cell14.setVerticalAlignment(PdfPCell.ALIGN_MIDDLE);
-                cell14.setVerticalAlignment(Element.ALIGN_MIDDLE);
+                //出发地 and 目的地
+                PdfPCell cellCity = new PdfPCell();
+                cellCity.setFixedHeight(25);
+                cellCity.disableBorderSide(15);
+                Paragraph paragraphCity = new Paragraph();
+                Phrase phraseCity = new Phrase(temp);
+                chunk13_2.setFont(font10_b);
+                paragraphCity.add(chunk13_2);
+                Chunk chunk13_3 = new Chunk(code);
+                chunk13_3.setFont(font8_gray);
+                paragraphCity.add(chunk13_3);
 
-                table5.addCell(cell14);
+                cellCity.addElement(paragraphCity);
+                cellCity.setBackgroundColor(new BaseColor(215, 215, 215));
+                cell13.disableBorderSide(15);
+                cellCity.setUseAscender(true);
+                cellCity.setVerticalAlignment(PdfPCell.ALIGN_MIDDLE);
+                cellCity.setVerticalAlignment(Element.ALIGN_MIDDLE);
+                table5.addCell(cellCity);
+
+
+
+               // 5
+                PdfPCell cell15 = new PdfPCell();
+                cell15.setFixedHeight(25);
+                Paragraph paragraph15 = new Paragraph();
+                paragraph15.setFont(font8_b);
+                paragraph15.setAlignment(Element.ALIGN_RIGHT);
+                paragraph15.add(new Phrase("订单号：" + commons.get(k).getOrderId()));
+                cell15.addElement(paragraph15);
+                cell15.setBackgroundColor(new BaseColor(215, 215, 215));
+                cell15.disableBorderSide(15);
+                cell15.setUseAscender(true);
+                cell15.setVerticalAlignment(PdfPCell.ALIGN_MIDDLE);
+                cell15.setVerticalAlignment(Element.ALIGN_MIDDLE);
+
+                table5.addCell(cell15);
 
                 document.add(table5);
 
 
-                //下半部分内容
-                PdfPTable table10 = new PdfPTable(3);
-                table10.setWidths(new int[]{20,10,70});
-                PdfPCell cell15_1 = new PdfPCell();
 
-                cell15_1.setFixedHeight(40);
+                //下半部分内容
+                PdfPTable table10 = new PdfPTable(4);
+                table10.setWidths(new int[]{15,5,60,20});
+                PdfPCell cell15_1 = new PdfPCell();
                 Paragraph paragraph15_1 = new Paragraph();
                 paragraph15_1.setFont(font5);
                 //simpleDateFormat1 = new SimpleDateFormat("HH:mm:ss");
@@ -283,8 +319,6 @@ public class MyDemo {
 
                 //第二列  --中间图片
                 PdfPCell cell16_1 = new PdfPCell();
-                cell16_1.setFixedHeight(40);
-
                 image7.scaleAbsolute(10,10);
                 image7.setAbsolutePosition(10,10);
 
@@ -297,30 +331,29 @@ public class MyDemo {
                 table10.addCell(cell16_1);
 
 
-                //第三列 ， 详细内容
+                //第三列 ， 差旅类型
                 PdfPCell cell17_1 = new PdfPCell();
-                cell17_1.setFixedHeight(40);
-                Paragraph paragraph17_1 = new Paragraph();
+                Paragraph paragraph17_1 = null;
                 cell17_1.disableBorderSide(15);
-                Chunk chunk2_1 = new Chunk("金额：" + commons.get(k).getAmount() + "       ");
-                Chunk chunk2_2 = new Chunk("预定时间：" + simpleDateFormat.format(commons.get(k).getBookingTime()) + "     ");
-                Chunk chunk2_3 = null;
                 if (commons.get(k).getTravelPlanNo()!=null && !commons.get(k).getTravelPlanNo().equals("")){
-                    chunk2_3 = new Chunk("差旅计划号：" + commons.get(k).getTravelPlanNo() + "         ");
+                    paragraph17_1 = new Paragraph("差旅类型：" +"【"+ commons.get(k).getTravelType() + "】" + "  " + commons.get(k).getTravelReason());
                 }else{
-                    chunk2_3 = new Chunk("无差旅计划                         ");
+                    paragraph17_1 = new Paragraph("无差旅计划");
                 }
-
-                Chunk chunk2_4 = new Chunk("费用归属：" + commons.get(k).getCostCenterName() + "         ");
-                Chunk chunk2_5 = new Chunk("订单号：" + commons.get(k).getOrderId() + "      ");
-                paragraph17_1.setFont(font6);
-                paragraph17_1.add(chunk2_1);
-                paragraph17_1.add(chunk2_2);
-                paragraph17_1.add(chunk2_3);
-                paragraph17_1.add(chunk2_4);
-                paragraph17_1.add(chunk2_5);
+                paragraph17_1.setFont(font8);
                 cell17_1.addElement(paragraph17_1);
                 table10.addCell(cell17_1);
+
+                //第四列， 费用归属
+                PdfPCell cell17_2 = new PdfPCell();
+                Paragraph paragraph17_2 = new Paragraph();
+                paragraph17_2.setAlignment(Element.ALIGN_RIGHT);
+                cell17_2.disableBorderSide(15);
+                Chunk chunk2_4 = new Chunk("费用归属：" + commons.get(k).getCostCenterName());
+                paragraph17_2.setFont(font8);
+                paragraph17_2.add(chunk2_4);
+                cell17_2.addElement(paragraph17_2);
+                table10.addCell(cell17_2);
 
                 document.add(table10);
             }
