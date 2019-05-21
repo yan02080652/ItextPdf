@@ -27,6 +27,7 @@ public class MyDemo {
         String imgPath = "E:\\workspace\\itextDemo\\src\\main\\resources\\1.gif";
         //String imgPath2 = "E:\\workspace\\itextDemo\\src\\main\\resources\\waterMark2.png";
         Image image7 = Image.getInstance("E:\\workspace\\itextDemo\\src\\main\\resources\\7.png");
+        Image image8 = Image.getInstance("E:\\workspace\\itextDemo\\src\\main\\resources\\f.png");
         List<String> list1 = new ArrayList<String>();
 
         list1.add(imgPath);
@@ -166,15 +167,19 @@ public class MyDemo {
                 cell10.setFixedHeight(25);
                 Paragraph paragraph10 = new Paragraph();
                 paragraph10.setFont(font8_gray);
-                SimpleDateFormat simpleDateFormat2 = new SimpleDateFormat("yyyy年mm月dd日");
+                SimpleDateFormat simpleDateFormat2 = new SimpleDateFormat("yyyy年MM月dd日");
                 Phrase phrase10 = new Phrase(simpleDateFormat2.format(commons.get(k).getTravelDate()));
+                SimpleDateFormat simpleDateFormat3 =new SimpleDateFormat("hh:mm");
                 paragraph10.add(phrase10);
                 paragraph10.setAlignment(Element.ALIGN_RIGHT);
+                Paragraph paragraph6 = new Paragraph(simpleDateFormat3.format(commons.get(k).getTravelDate()));
+                paragraph6.setAlignment(Element.ALIGN_RIGHT);
+                paragraph6.setFont(font6_gray);
                 cell10.disableBorderSide(15);
                 cell10.setUseAscender(true);
-                cell10.setVerticalAlignment(PdfPCell.ALIGN_MIDDLE);
-                //cell10.setHorizontalAlignment(Element.ALIGN_CENTER);
+                cell10.setHorizontalAlignment(Element.ALIGN_CENTER);
                 cell10.addElement(paragraph10);
+                cell10.addElement(paragraph6);
 
                 table5.addCell(cell10);
 
@@ -316,13 +321,19 @@ public class MyDemo {
 
                 table10.addCell(cell15_1);
 
-
                 //第二列  --中间图片
                 PdfPCell cell16_1 = new PdfPCell();
-                image7.scaleAbsolute(10,10);
-                image7.setAbsolutePosition(10,10);
-
-                cell16_1.addElement(image7);
+                if (k<commons.size()-1){
+                    if (commons.get(k).getOrderId().equals(commons.get(k+1).getOrderId())){
+                        image8.scaleAbsolute(10,10);
+                        image8.setAbsolutePosition(10,10);
+                        cell16_1.addElement(image8);
+                    }else{
+                        image7.scaleAbsolute(10,10);
+                        image7.setAbsolutePosition(10,10);
+                        cell16_1.addElement(image7);
+                    }
+                }
                 cell16_1.setUseAscender(true);
                 cell16_1.setVerticalAlignment(PdfPCell.ALIGN_MIDDLE);
                 cell16_1.setHorizontalAlignment(Element.ALIGN_CENTER);
@@ -488,4 +499,16 @@ public class MyDemo {
         reader.close();
         return distPdf;
     }
+
+    public static void main(String[] args) {
+
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy年MM月dd日 hh:mm");
+        System.out.println(simpleDateFormat.format(date));
+        String format = simpleDateFormat.format(date);
+        String date1 = format.substring(format.indexOf(" "));
+        System.out.println(date1);
+
+    }
+
 }
