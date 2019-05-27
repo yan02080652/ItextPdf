@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e74d1730-3f36-4d2f-b51d-4d9a20f1d79d" name="Default Changelist" comment="">
+    <list default="true" id="e74d1730-3f36-4d2f-b51d-4d9a20f1d79d" name="Default Changelist" comment="itext java pdf png">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/demo/MyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/demo/MyDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/demo/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/demo/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/MyDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/MyDemo1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/MyDemoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/PdfToPngDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/demo/PdfToPngDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/PngDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/demo/PngDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/MyDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/demo/MyDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/demo/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/demo/WaterMarkImage.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,12 +18,12 @@
     <session id="-1504837615">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.1" value="6" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.1" value="8" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -53,15 +46,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="15527" />
-          <entry key="txt" value="20" />
+          <entry key="java" value="16047" />
+          <entry key="txt" value="46" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15527" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="JAVA" value="16047" />
+          <entry key="PLAIN_TEXT" value="46" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
@@ -72,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="42" column="29" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="29" />
+            <state relative-caret-position="228">
+              <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,11 +77,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/MyDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="357" column="38" lean-forward="true" selection-start-line="301" selection-start-column="2" selection-end-line="357" selection-end-column="38" />
+            <state relative-caret-position="-1780">
+              <caret line="52" column="96" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1099#1107#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,8 +105,10 @@
       <find>document</find>
       <find>1.</find>
       <find>image</find>
-      <find>image7</find>
       <find>targetPath</find>
+      <find>simpleDateFormat1</find>
+      <find>simpleDateFormat</find>
+      <find>image7</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,7 +154,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="830" />
+    <option name="x" value="611" />
+    <option name="y" value="252" />
     <option name="width" value="1100" />
     <option name="height" value="625" />
   </component>
@@ -170,7 +165,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -235,13 +229,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558263288301" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558454477431" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
@@ -342,9 +337,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.MyDemo" />
         <item itemvalue="Application.PdfToPngDemo" />
         <item itemvalue="Application.PngDemo" />
-        <item itemvalue="Application.MyDemo" />
         <item itemvalue="Application.Demo2" />
       </list>
     </recent_temporary>
@@ -367,7 +362,9 @@
       <workItem from="1558022998715" duration="4106000" />
       <workItem from="1558065056764" duration="1317000" />
       <workItem from="1558080343091" duration="2518000" />
-      <workItem from="1558247046607" duration="14493000" />
+      <workItem from="1558247046607" duration="14743000" />
+      <workItem from="1558339688561" duration="722000" />
+      <workItem from="1558452158388" duration="2401000" />
     </task>
     <task id="LOCAL-00001" summary="itext java pdf png">
       <created>1558080854542</created>
@@ -376,17 +373,31 @@
       <option name="project" value="LOCAL" />
       <updated>1558080854542</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="itext java pdf png">
+      <created>1558263322077</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558263322077</updated>
+    </task>
+    <task id="LOCAL-00003" summary="不同订单使用实线连接，相同订单使用虚线连接">
+      <created>1558454533097</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558454533097</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84099000" />
+    <option name="totallyTimeSpent" value="87472000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" x="526" y="47" width="434" height="729" id="Project" order="0" sideWeight="0.49909583" weight="0.26876676" />
+      <window_info active="true" content_ui="combo" x="526" y="47" width="434" height="729" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.26876676" />
       <window_info id="Structure" order="1" sideWeight="0.50090414" side_tool="true" weight="0.22453083" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -396,7 +407,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14872521" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24362606" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -460,19 +471,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="itext java pdf png" />
-    <option name="LAST_COMMIT_MESSAGE" value="itext java pdf png" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/test/demo/MyDemo.java</url>
-          <line>225</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="不同订单使用实线连接，相同订单使用虚线连接" />
+    <option name="LAST_COMMIT_MESSAGE" value="不同订单使用实线连接，相同订单使用虚线连接" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://E:/apache-maven-3.3.9-jar/repository/com/itextpdf/itextpdf/5.5.12/itextpdf-5.5.12.jar!/com/itextpdf/text/pdf/PdfPTable.class">
@@ -601,9 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -623,8 +620,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="42" column="29" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="29" />
+        <state relative-caret-position="228">
+          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -633,11 +630,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/demo/MyDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="357" column="38" lean-forward="true" selection-start-line="301" selection-start-column="2" selection-end-line="357" selection-end-column="38" />
+        <state relative-caret-position="-1780">
+          <caret line="52" column="96" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1099#1107#0" expanded="true" />
           </folding>
         </state>
       </provider>

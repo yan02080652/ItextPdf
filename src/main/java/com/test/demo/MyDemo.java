@@ -61,6 +61,8 @@ public class MyDemo {
             table.setTotalWidth(100);
             table.setWidths(new int[]{30,40,30});
 
+
+
             //第一列   标题
             PdfPCell cell = new PdfPCell();
             Paragraph paragraph = new Paragraph();
